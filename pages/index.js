@@ -186,7 +186,7 @@ export default function Home() {
 
   return (
     <div className={styles.outerContainer}>
-      <Link href="https://live.bilibili.com/23777594" passHref>
+      <Link href="https://live.bilibili.com/24604089" passHref>
         <a target="_blank" style={{ textDecoration: "none", color: "#1D0C26" }}>
           <div className={styles.goToLiveDiv}>
             <div className={styles.cornerToggle}>
@@ -221,18 +221,18 @@ export default function Home() {
       <Container>
 
         <Head>
-          <title>七禾いえ的歌单</title>
+          <title>幼栗的歌单</title>
           <meta
             name="keywords"
-            content="七禾いえ,B站,bilibili,哔哩哔哩,电台唱见,歌单"
+            content="幼栗いえ,B站,bilibili,哔哩哔哩,电台唱见,歌单"
           />
-          <meta name="description" content="七禾いえ的歌单" />
+          <meta name="description" content="幼栗的歌单" />
 
           <meta name="theme-color" content="#1d0c26" />
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-          <meta name="apple-mobile-web-app-title" content="七禾いえ的歌单" />
+          <meta name="apple-mobile-web-app-title" content="幼栗的歌单" />
           <meta name='format-detection' content='telephone=no' />
           <meta name='msapplication-config' content='/a2hs/browserconfig.xml' />
           <meta name='msapplication-tap-highlight' content='no' />
@@ -293,7 +293,7 @@ export default function Home() {
                 <Image
                   loader={imageLoader}
                   className={styles.avatar}
-                  src="nanakaie.webp"
+                  src="yuri.jpeg"
                   alt="七宝的头像"
                   width={250}
                   height={250}
@@ -301,10 +301,10 @@ export default function Home() {
                 <h1
                   className={"display-6 text-center pt-3 " + styles.grandTitle}
                 >
-                  七禾いえ
+                  西木老师
                 </h1>
                 <h1 className={"display-6 text-center " + styles.grandTitle}>
-                  和她拿手的<b>{filteredSongList.length}</b>首歌
+                 最会唱的<b>{filteredSongList.length}</b>首歌
                 </h1>
                 <p className="text-center py-3 mb-xl-5 text-muted">
                   轻点歌名可以复制哦
@@ -313,68 +313,23 @@ export default function Home() {
               <div className={styles.introBox}>
                 <div className={styles.introBoxInnerDiv}>
                   <div className={styles.introTitle}>
-                    <h5>七禾的自我介绍</h5>
+                    <h5>幼栗的自我介绍</h5>
                     <div className="d-flex">
-                      <Link
-                        href="https://music.163.com/#/user?id=383239879"
-                        passHref
-                      >
-                        <a
-                          target="_blank"
-                          style={{
-                            marginRight: "1rem",
-                            cursor: 'url("/cursor_pointer.png"), pointer',
-                          }}
-                          title="七禾的网易云音乐主页"
-                        >
-                          <Image
-                            loader={imageLoader}
-                            src="163music.ico"
-                            alt="七禾的网易云音乐主页链接"
-                            width={24}
-                            height={24}
-                          />
-                        </a>
-                      </Link>
-                      <Link
-                        href="https://y.qq.com/n/ryqq/singer/003XSaZ01pyD8x"
-                        passHref
-                      >
-                        <a
-                          target="_blank"
-                          style={{
-                            cursor: 'url("/cursor_pointer.png"), pointer',
-                          }}
-                          title="七禾的QQ音乐主页"
-                        >
-                          <Image
-                            loader={imageLoader}
-                            src="qqmusic.ico"
-                            alt="七禾的QQ音乐主页链接"
-                            width={24}
-                            height={24}
-                          />
-                        </a>
-                      </Link>
                     </div>
                   </div>
                   <p className={styles.introParagraph}>
-                    🐏咩，这里是小羊人七禾，是一只来自咩星的绵羊（羊毛虽好但不要薅七禾的羊毛⊙∀⊙！）
-                    性别女 没有角但有耳朵 身高160cm 生日6月26日
+                    💗CV圈的新人，性格很温柔，笑点非常低但是她自己说自己面瘫诶。是一位网瘾少女，特别喜欢打英雄联盟典型的人菜，瘾又大，因为听了英雄联盟上面各位前辈的配音，对配音演员产生了浓厚的兴趣并且朝自己的目标努力奋斗着！
+                    目标：给英雄联盟里的英雄配音！
                   </p>
                   <p className={styles.introParagraph}>
-                    🐏直播内容主打吹拉弹唱（吹水·拉胯·弹钢琴·唱歌），歌曲语言包括中日英粤韩。偶尔偶尔打打游戏（血压飙升的那种。
-                    目前直播时间是工作日早上9.40晚上20.40和周末早上10.40晚上21.00。
+                    💗幼栗名字的由来，是根据最喜欢的歌手----Sayuri(歌手)，栗宝心目中的宝藏歌手，非常倾慕Sayuri(歌手)敢于有梦想的勇气和说做就做的风格。
+                    有段时间英雄联盟的id就叫Sayuri，大家叫着叫着最后就取名幼（Yu） 栗（Ri）了。没想到吧！我也没想到能这么草率！ 另外本名的缩写中也带有 Y
                   </p>
                   <p className={styles.introParagraph}>
-                    🐏本直播间郑重承诺点歌不用戴牌子，只需打米，一个喵娘点唱，sc置顶，上船无限点歌还可以指定学歌噢。个别高能歌曲需要水晶球。
+                    💗爱好：唱歌，配音，猫奴应该是爱好吧（目前家里有一只布偶猫，叫魔典），在Bilibili发布的第一个投稿就是自家的猫猫，对猫猫宠爱至极。好想成为那只猫啊！可恶！
                   </p>
                   <p className={styles.introParagraph}>
-                    🐏欢迎大家投递自己生活中有趣的小故事或者苦恼的问题到七羊羊的匿名提问箱，
-                    累积到一定数量会开启提问箱专场ε(*･ω･)_/ﾟ:･☆
-                  </p>
-                  <p className={styles.introParagraph}>
-                    🐏本羊正经的时候超正经，不正经的时候也超不正经，希望新来的朋友可以多来直播间和我一起玩，我们互相了解！我会做你最可爱的小羊，你也会是我最嫩绿可口的那颗草（bushi！
+                    💗（西木老师真的很温柔，希望大家能照顾好她）
                   </p>
                   <div className="d-flex flex-nowrap justify-content-evenly">
                     <Link
@@ -685,11 +640,11 @@ export default function Home() {
       </Container>
       <Offcanvas show={showIntro} onHide={handleCloseIntro}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>七禾的自我介绍</Offcanvas.Title>
+          <Offcanvas.Title>幼栗的自我介绍</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <p className={styles.introParagraph}>
-            🐏咩，这里是小羊人七禾，是一只来自咩星的绵羊（羊毛虽好但不要薅七禾的羊毛⊙∀⊙！）
+            🐏咩，这里是小羊人幼栗，是一只来自咩星的绵羊（羊毛虽好但不要薅幼栗的羊毛⊙∀⊙！）
             性别女 没有角但有耳朵 身高160cm 生日6月26日
           </p>
           <p className={styles.introParagraph}>
@@ -764,7 +719,7 @@ export default function Home() {
                   src="/163music.ico"
                   alt="网易云组贴图"
                 />{" "}
-                七禾的网易云主页 <ChevronSVG />
+                幼栗的网易云主页 <ChevronSVG />
               </Button>
             </a>
           </Link>
@@ -782,7 +737,7 @@ export default function Home() {
                   src="/qqmusic.ico"
                   alt="QQ音乐贴图"
                 />{" "}
-                七禾的QQ音乐主页 <ChevronSVG />
+                幼栗的QQ音乐主页 <ChevronSVG />
               </Button>
             </a>
           </Link>
