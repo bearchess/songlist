@@ -35,7 +35,7 @@
 
 .avatar {
   border-radius: 100%;
-  border: 3px solid #bea5c1 !important;
+  border: 3px solid #aa4bb6 !important;
 }
 
 .songRow {
@@ -151,7 +151,7 @@
 
 .splitBtnActive > button:active {
   color: #1d0c26;
-  background-color: #bea5c1;
+  background-color: #bd65c7;
   box-shadow: none;
 }
 
@@ -197,7 +197,7 @@
 
 @media (min-width: 1201px) {
   .outerContainer {
-    background: url("/tipsy.webp") center center no-repeat fixed;
+    background: url("/beijing_yuri.jpeg") center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -224,7 +224,7 @@
     position: absolute;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 1rem;
-    border: 2px solid #a083a0;
+    border: 2px solid #a85da8;
     padding: 1rem;
   }
 

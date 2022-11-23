@@ -252,7 +252,7 @@ export default function Home() {
           <link rel="icon" type="image/png" sizes="96x96" href="/a2hs/favicon-96x96.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/a2hs/favicon-16x16.png" />
           <link rel="manifest" href="/a2hs/manifest.json" />
-          <meta name="msapplication-TileColor" content="#DFD1E3" />
+          <meta name="msapplication-TileColor" content="#bb39cb" />
           <meta name="msapplication-TileImage" content="/a2hs/ms-icon-144x144.png" />
 
           <link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/12.9__iPad_Pro_landscape.png" />
@@ -332,24 +332,24 @@ export default function Home() {
                     💗（西木老师真的很温柔，希望大家能照顾好她）
                   </p>
                   <div className="d-flex flex-nowrap justify-content-evenly">
-                    <Link
-                      href="https://www.tapechat.net/uu/I5WYEZ/AP42LSVE"
-                      passHref
-                    >
-                      <a target="_blank">
-                        <Button
-                          className={styles.customRandomButton}
-                          style={{ marginTop: 0, border: "2px solid #DFD1E3" }}
-                        >
-                          <img
-                            className={styles.biliIcon}
-                            src="/tapechat.png"
-                            alt="提问箱贴图"
-                          />{" "}
-                          匿名提问箱 <ChevronSVG />
-                        </Button>
-                      </a>
-                    </Link>
+                    {/*<Link*/}
+                    {/*  href="https://www.tapechat.net/uu/I5WYEZ/AP42LSVE"*/}
+                    {/*  passHref*/}
+                    {/*>*/}
+                    {/*  <a target="_blank">*/}
+                    {/*    <Button*/}
+                    {/*      className={styles.customRandomButton}*/}
+                    {/*      style={{ marginTop: 0, border: "2px solid #DFD1E3" }}*/}
+                    {/*    >*/}
+                    {/*      <img*/}
+                    {/*        className={styles.biliIcon}*/}
+                    {/*        src="/tapechat.png"*/}
+                    {/*        alt="提问箱贴图"*/}
+                    {/*      />{" "}*/}
+                    {/*      匿名提问箱 <ChevronSVG />*/}
+                    {/*    </Button>*/}
+                    {/*  </a>*/}
+                    {/*</Link>*/}
                     <Link
                       href="https://space.bilibili.com/291405893/dynamic"
                       passHref
@@ -361,29 +361,10 @@ export default function Home() {
                         >
                           <img
                             className={styles.biliIcon}
-                            src="/liang_bao.webp"
-                            alt="君为苍凉头像贴图"
+                            src="/lubo_yuri.webp"
+                            alt="心碎头像贴图"
                           />{" "}
-                          录播组（@君为苍凉） <ChevronSVG />
-                        </Button>
-                      </a>
-                    </Link>
-                    <Link
-                      href="https://space.bilibili.com/545589798/dynamic"
-                      passHref
-                    >
-                      <a target="_blank">
-                        <Button
-                          className={styles.customRandomButton}
-                          style={{ marginTop: 0, border: "2px solid #DFD1E3" }}
-                        >
-                          <img
-                            className={styles.biliIcon}
-                            src="/qie_ge.webp"
-                            alt="屑羊羊切片组贴图"
-                            style={{ borderRadius: "100%" }}
-                          />{" "}
-                          切片组 <ChevronSVG />
+                          录播组（@心碎） <ChevronSVG />
                         </Button>
                       </a>
                     </Link>
@@ -420,121 +401,121 @@ export default function Home() {
                         setInitialState={setInitialState}
                       />
                     </Col>
-                    <Col xs={6} md={3}>
-                      <div className="d-grid">
-                        <Button
-                          className={
-                            categorySelection.lang == "日语"
-                              ? styles.customCategoryButtonActive
-                              : styles.customCategoryButton
-                          }
-                          onClick={(e) => {
-                            categorySelection.lang == "日语"
-                              ? setLanguageState("")
-                              : setLanguageState("日语");
-                          }}
-                        >
-                          日语
-                        </Button>
-                      </div>
-                    </Col>
-                    <Col xs={6} md={3}>
-                      <div className="d-grid">
-                        <Button
-                          className={
-                            categorySelection.lang == "英语"
-                              ? styles.customCategoryButtonActive
-                              : styles.customCategoryButton
-                          }
-                          onClick={(e) => {
-                            categorySelection.lang == "英语"
-                              ? setLanguageState("")
-                              : setLanguageState("英语");
-                          }}
-                        >
-                          英语
-                        </Button>
-                      </div>
-                    </Col>
-                    <Col xs={6} md={3}>
-                      <div className="d-grid">
-                        <Button
-                          className={
-                            categorySelection.lang == "粤语"
-                              ? styles.customCategoryButtonActive
-                              : styles.customCategoryButton
-                          }
-                          onClick={(e) => {
-                            categorySelection.lang == "粤语"
-                              ? setLanguageState("")
-                              : setLanguageState("粤语");
-                          }}
-                        >
-                          粤语
-                        </Button>
-                      </div>
-                    </Col>
-                    <Col xs={6} md={3}>
-                      <div className="d-grid">
-                        <Button
-                          className={
-                            categorySelection.lang == "韩语"
-                              ? styles.customCategoryButtonActive
-                              : styles.customCategoryButton
-                          }
-                          onClick={(e) => {
-                            categorySelection.lang == "韩语"
-                              ? setLanguageState("")
-                              : setLanguageState("韩语");
-                          }}
-                        >
-                          韩语
-                        </Button>
-                      </div>
-                    </Col>
-                    <Col xs={6} md={3}>
-                      <div className="d-grid">
+                    {/*<Col xs={6} md={3}>*/}
+                    {/*  <div className="d-grid">*/}
+                    {/*    <Button*/}
+                    {/*      className={*/}
+                    {/*        categorySelection.lang == "日语"*/}
+                    {/*          ? styles.customCategoryButtonActive*/}
+                    {/*          : styles.customCategoryButton*/}
+                    {/*      }*/}
+                    {/*      onClick={(e) => {*/}
+                    {/*        categorySelection.lang == "日语"*/}
+                    {/*          ? setLanguageState("")*/}
+                    {/*          : setLanguageState("日语");*/}
+                    {/*      }}*/}
+                    {/*    >*/}
+                    {/*      日语*/}
+                    {/*    </Button>*/}
+                    {/*  </div>*/}
+                    {/*</Col>*/}
+                    {/*<Col xs={6} md={3}>*/}
+                    {/*  <div className="d-grid">*/}
+                    {/*    <Button*/}
+                    {/*      className={*/}
+                    {/*        categorySelection.lang == "英语"*/}
+                    {/*          ? styles.customCategoryButtonActive*/}
+                    {/*          : styles.customCategoryButton*/}
+                    {/*      }*/}
+                    {/*      onClick={(e) => {*/}
+                    {/*        categorySelection.lang == "英语"*/}
+                    {/*          ? setLanguageState("")*/}
+                    {/*          : setLanguageState("英语");*/}
+                    {/*      }}*/}
+                    {/*    >*/}
+                    {/*      英语*/}
+                    {/*    </Button>*/}
+                    {/*  </div>*/}
+                    {/*</Col>*/}
+                    {/*<Col xs={6} md={3}>*/}
+                    {/*  <div className="d-grid">*/}
+                    {/*    <Button*/}
+                    {/*      className={*/}
+                    {/*        categorySelection.lang == "粤语"*/}
+                    {/*          ? styles.customCategoryButtonActive*/}
+                    {/*          : styles.customCategoryButton*/}
+                    {/*      }*/}
+                    {/*      onClick={(e) => {*/}
+                    {/*        categorySelection.lang == "粤语"*/}
+                    {/*          ? setLanguageState("")*/}
+                    {/*          : setLanguageState("粤语");*/}
+                    {/*      }}*/}
+                    {/*    >*/}
+                    {/*      粤语*/}
+                    {/*    </Button>*/}
+                    {/*  </div>*/}
+                    {/*</Col>*/}
+                    {/*<Col xs={6} md={3}>*/}
+                    {/*  <div className="d-grid">*/}
+                    {/*    <Button*/}
+                    {/*      className={*/}
+                    {/*        categorySelection.lang == "韩语"*/}
+                    {/*          ? styles.customCategoryButtonActive*/}
+                    {/*          : styles.customCategoryButton*/}
+                    {/*      }*/}
+                    {/*      onClick={(e) => {*/}
+                    {/*        categorySelection.lang == "韩语"*/}
+                    {/*          ? setLanguageState("")*/}
+                    {/*          : setLanguageState("韩语");*/}
+                    {/*      }}*/}
+                    {/*    >*/}
+                    {/*      韩语*/}
+                    {/*    </Button>*/}
+                    {/*  </div>*/}
+                    {/*</Col>*/}
+                    {/*<Col xs={6} md={3}>*/}
+                    {/*  <div className="d-grid">*/}
 
-                      {/** 
-                                            <Button
-                          className={
-                            categorySelection.remark == "钢琴"
-                              ? styles.customCategoryButtonActive
-                              : styles.customCategoryButton
-                          }
-                          onClick={(e) => {
-                            categorySelection.remark == "钢琴"
-                              ? setRemarkState("")
-                              : setRemarkState("钢琴");
-                          }}
-                        >
-                          钢琴
-                        </Button>
-                    */}
-                        <PianoBtn
-                        remarkFilter={categorySelection.remark}
-                        setRemarkState={setRemarkState}
-                      />
-                      </div>
-                    </Col>
-                    <Col xs={6} md={3}>
-                      <div className="d-grid">
-                        <Button
-                          className={
-                            categorySelection.remark == "rap"
-                              ? styles.customCategoryButtonActive
-                              : styles.customCategoryButton
-                          }
-                          onClick={(e) => {
-                            categorySelection.remark == "rap"
-                              ? setRemarkState("")
-                              : setRemarkState("rap");
-                          }}
-                        >
-                          Rap
-                        </Button>
-                      </div>
-                    </Col>
+                    {/*  /!** */}
+                    {/*                        <Button*/}
+                    {/*      className={*/}
+                    {/*        categorySelection.remark == "钢琴"*/}
+                    {/*          ? styles.customCategoryButtonActive*/}
+                    {/*          : styles.customCategoryButton*/}
+                    {/*      }*/}
+                    {/*      onClick={(e) => {*/}
+                    {/*        categorySelection.remark == "钢琴"*/}
+                    {/*          ? setRemarkState("")*/}
+                    {/*          : setRemarkState("钢琴");*/}
+                    {/*      }}*/}
+                    {/*    >*/}
+                    {/*      钢琴*/}
+                    {/*    </Button>*/}
+                    {/**!/*/}
+                    {/*    <PianoBtn*/}
+                    {/*    remarkFilter={categorySelection.remark}*/}
+                    {/*    setRemarkState={setRemarkState}*/}
+                    {/*  />*/}
+                    {/*  </div>*/}
+                    {/*</Col>*/}
+                    {/*<Col xs={6} md={3}>*/}
+                    {/*  <div className="d-grid">*/}
+                    {/*    <Button*/}
+                    {/*      className={*/}
+                    {/*        categorySelection.remark == "rap"*/}
+                    {/*          ? styles.customCategoryButtonActive*/}
+                    {/*          : styles.customCategoryButton*/}
+                    {/*      }*/}
+                    {/*      onClick={(e) => {*/}
+                    {/*        categorySelection.remark == "rap"*/}
+                    {/*          ? setRemarkState("")*/}
+                    {/*          : setRemarkState("rap");*/}
+                    {/*      }}*/}
+                    {/*    >*/}
+                    {/*      Rap*/}
+                    {/*    </Button>*/}
+                    {/*  </div>*/}
+                    {/*</Col>*/}
                     <Col xs={6} md={3}>
                       <div className="d-grid">
                         <Button
@@ -635,7 +616,7 @@ export default function Home() {
           <div></div>
         )}
         <footer className={styles.footer}>
-          Copyright © 2022 七宝和她的家人们
+          Copyright © 2022 NoahAir
         </footer>
       </Container>
       <Offcanvas show={showIntro} onHide={handleCloseIntro}>
@@ -643,25 +624,36 @@ export default function Home() {
           <Offcanvas.Title>幼栗的自我介绍</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <p className={styles.introParagraph}>
-            🐏咩，这里是小羊人幼栗，是一只来自咩星的绵羊（羊毛虽好但不要薅幼栗的羊毛⊙∀⊙！）
-            性别女 没有角但有耳朵 身高160cm 生日6月26日
-          </p>
-          <p className={styles.introParagraph}>
-            🐏直播内容主打吹拉弹唱（吹水·拉胯·弹钢琴·唱歌），歌曲语言包括中日英粤韩。偶尔偶尔打打游戏（血压飙升的那种。
-            目前直播时间是工作日早上9.40晚上20.40和周末早上10.40晚上21.00。
-          </p>
-          <p className={styles.introParagraph}>
-            🐏本直播间郑重承诺点歌不用戴牌子，只需打米，一个喵娘点唱，sc置顶，上船无限点歌还可以指定学歌噢。个别高能歌曲需要水晶球。
-          </p>
-          <p className={styles.introParagraph}>
-            🐏欢迎大家投递自己生活中有趣的小故事或者苦恼的问题到七羊羊的匿名提问箱，
-            累积到一定数量会开启提问箱专场ε(*･ω･)_/ﾟ:･☆
-          </p>
-          <p className={styles.introParagraph}>
-            🐏本羊正经的时候超正经，不正经的时候也超不正经，希望新来的朋友可以多来直播间和我一起玩，我们互相了解！我会做你最可爱的小羊，你也会是我最嫩绿可口的那颗草（bushi！
-          </p>
-          <Link href="https://www.tapechat.net/uu/I5WYEZ/AP42LSVE" passHref>
+            <p className={styles.introParagraph}>
+              💗CV圈的新人，性格很温柔，笑点非常低但是她自己说自己面瘫诶。是一位网瘾少女，特别喜欢打英雄联盟典型的人菜，瘾又大，因为听了英雄联盟上面各位前辈的配音，对配音演员产生了浓厚的兴趣并且朝自己的目标努力奋斗着！
+              目标：给英雄联盟里的英雄配音！
+            </p>
+            <p className={styles.introParagraph}>
+              💗幼栗名字的由来，是根据最喜欢的歌手----Sayuri(歌手)，栗宝心目中的宝藏歌手，非常倾慕Sayuri(歌手)敢于有梦想的勇气和说做就做的风格。
+              有段时间英雄联盟的id就叫Sayuri，大家叫着叫着最后就取名幼（Yu） 栗（Ri）了。没想到吧！我也没想到能这么草率！ 另外本名的缩写中也带有 Y
+            </p>
+            <p className={styles.introParagraph}>
+              💗爱好：唱歌，配音，猫奴应该是爱好吧（目前家里有一只布偶猫，叫魔典），在Bilibili发布的第一个投稿就是自家的猫猫，对猫猫宠爱至极。好想成为那只猫啊！可恶！
+            </p>
+            <p className={styles.introParagraph}>
+              💗（西木老师真的很温柔，希望大家能照顾好她）
+            </p>
+          {/*<Link href="https://www.tapechat.net/uu/I5WYEZ/AP42LSVE" passHref>*/}
+          {/*  <a target="_blank">*/}
+          {/*    <Button*/}
+          {/*      className={styles.customRandomButton}*/}
+          {/*      style={{ border: "2px solid #1D0C26", width: "100%" }}*/}
+          {/*    >*/}
+          {/*      <img*/}
+          {/*        className={styles.biliIcon}*/}
+          {/*        src="/tapechat.png"*/}
+          {/*        alt="提问箱贴图"*/}
+          {/*      />{" "}*/}
+          {/*      匿名提问箱 <ChevronSVG />*/}
+          {/*    </Button>*/}
+          {/*  </a>*/}
+          {/*</Link>*/}
+          <Link href="https://space.bilibili.com/1367210977/dynamic" passHref>
             <a target="_blank">
               <Button
                 className={styles.customRandomButton}
@@ -669,78 +661,46 @@ export default function Home() {
               >
                 <img
                   className={styles.biliIcon}
-                  src="/tapechat.png"
-                  alt="提问箱贴图"
+                  src="/lubo_yuri.webp"
+                  alt="心碎头像贴图"
                 />{" "}
-                匿名提问箱 <ChevronSVG />
+                录播组（@心碎） <ChevronSVG />
               </Button>
             </a>
           </Link>
-          <Link href="https://space.bilibili.com/291405893/dynamic" passHref>
-            <a target="_blank">
-              <Button
-                className={styles.customRandomButton}
-                style={{ border: "2px solid #1D0C26", width: "100%" }}
-              >
-                <img
-                  className={styles.biliIcon}
-                  src="/liang_bao.webp"
-                  alt="君为苍凉头像贴图"
-                />{" "}
-                录播组（@君为苍凉） <ChevronSVG />
-              </Button>
-            </a>
-          </Link>
-          <Link href="https://space.bilibili.com/545589798/dynamic" passHref>
-            <a target="_blank">
-              <Button
-                className={styles.customRandomButton}
-                style={{ border: "2px solid #1D0C26", width: "100%" }}
-              >
-                <img
-                  className={styles.biliIcon}
-                  src="/qie_ge.webp"
-                  alt="屑羊羊切片组贴图"
-                  style={{ borderRadius: "100%" }}
-                />{" "}
-                切片组 <ChevronSVG />
-              </Button>
-            </a>
-          </Link>
-
-          <Link href="https://music.163.com/m/user?id=383239879" passHref>
-            <a target="_blank">
-              <Button
-                className={styles.customRandomButton}
-                style={{ border: "2px solid #1D0C26", width: "100%" }}
-              >
-                <img
-                  className={styles.biliIcon}
-                  src="/163music.ico"
-                  alt="网易云组贴图"
-                />{" "}
-                幼栗的网易云主页 <ChevronSVG />
-              </Button>
-            </a>
-          </Link>
-          <Link
-            href="https://i.y.qq.com/n2/m/share/profile_v2/index.html?ADTAG=ryqq.singer&source=ydetail&singermid=003XSaZ01pyD8x"
-            passHref
-          >
-            <a target="_blank">
-              <Button
-                className={styles.customRandomButton}
-                style={{ border: "2px solid #1D0C26", width: "100%" }}
-              >
-                <img
-                  className={styles.biliIcon}
-                  src="/qqmusic.ico"
-                  alt="QQ音乐贴图"
-                />{" "}
-                幼栗的QQ音乐主页 <ChevronSVG />
-              </Button>
-            </a>
-          </Link>
+          {/*<Link href="https://music.163.com/m/user?id=383239879" passHref>*/}
+          {/*  <a target="_blank">*/}
+          {/*    <Button*/}
+          {/*      className={styles.customRandomButton}*/}
+          {/*      style={{ border: "2px solid #1D0C26", width: "100%" }}*/}
+          {/*    >*/}
+          {/*      <img*/}
+          {/*        className={styles.biliIcon}*/}
+          {/*        src="/163music.ico"*/}
+          {/*        alt="网易云组贴图"*/}
+          {/*      />{" "}*/}
+          {/*      幼栗的网易云主页 <ChevronSVG />*/}
+          {/*    </Button>*/}
+          {/*  </a>*/}
+          {/*</Link>*/}
+          {/*<Link*/}
+          {/*  href="https://i.y.qq.com/n2/m/share/profile_v2/index.html?ADTAG=ryqq.singer&source=ydetail&singermid=003XSaZ01pyD8x"*/}
+          {/*  passHref*/}
+          {/*>*/}
+          {/*  <a target="_blank">*/}
+          {/*    <Button*/}
+          {/*      className={styles.customRandomButton}*/}
+          {/*      style={{ border: "2px solid #1D0C26", width: "100%" }}*/}
+          {/*    >*/}
+          {/*      <img*/}
+          {/*        className={styles.biliIcon}*/}
+          {/*        src="/qqmusic.ico"*/}
+          {/*        alt="QQ音乐贴图"*/}
+          {/*      />{" "}*/}
+          {/*      幼栗的QQ音乐主页 <ChevronSVG />*/}
+          {/*    </Button>*/}
+          {/*  </a>*/}
+          {/*</Link>*/}
         </Offcanvas.Body>
       </Offcanvas>
       <BiliPlayerModal

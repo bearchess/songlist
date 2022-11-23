@@ -4,7 +4,7 @@ import { SplitButton, Dropdown } from "react-bootstrap";
 
 export default function PianoBtn({ remarkFilter, setRemarkState }) {
   // const activeColor = "#d7c2f9";
-  const activeColor = "#BEA5C1";
+  const activeColor = "#bb39cb";
   return (
     <div className="d-grid">
       <SplitButton

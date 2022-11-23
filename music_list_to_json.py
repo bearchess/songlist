@@ -1,6 +1,7 @@
 import json
 import pandas as pd
 import urllib.request
+import openpyxl
 # import logging
 # import time
 song_list = []
@@ -55,7 +56,7 @@ if __name__ == '__main__':
     #         file.write(json.dumps(song_list))
     #     time.sleep(60*60*24)
 
-    updateSongList()
+    #updateSongList()
     parseSonglist()
     with open("./public/music_list_7.json", 'w') as file:
         file.write(json.dumps(song_list))
