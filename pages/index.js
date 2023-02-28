@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useEffect, useState} from "react";
 
 import Head from "next/head";
 import Link from "next/link";
@@ -7,16 +7,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import "react-toastify/dist/ReactToastify.css";
 
-import {
-  Container,
-  Row,
-  Col,
-  Form,
-  Table,
-  Button,
-  Offcanvas,
-} from "react-bootstrap";
-import { toast } from "react-toastify";
+import {Button, Col, Container, Form, Offcanvas, Row, Table,} from "react-bootstrap";
+import {toast} from "react-toastify";
 import copy from "copy-to-clipboard";
 
 import MusicList from "../public/music_list_7.json";
@@ -186,7 +178,7 @@ export default function Home() {
 
   return (
     <div className={styles.outerContainer}>
-      <Link href="https://live.bilibili.com/24604089" passHref>
+      <Link href="https://live.bilibili.com/24568787" passHref>
         <a target="_blank" style={{ textDecoration: "none", color: "#1D0C26" }}>
           <div className={styles.goToLiveDiv}>
             <div className={styles.cornerToggle}>
@@ -221,18 +213,18 @@ export default function Home() {
       <Container>
 
         <Head>
-          <title>幼栗的歌单</title>
+          <title>芽衣子meiko的歌单</title>
           <meta
             name="keywords"
-            content="幼栗いえ,B站,bilibili,哔哩哔哩,电台唱见,歌单"
+            content="芽衣子meiko,B站,bilibili,哔哩哔哩,小学生,歌单"
           />
-          <meta name="description" content="幼栗的歌单" />
+          <meta name="description" content="芽衣子meiko" />
 
           <meta name="theme-color" content="#1d0c26" />
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-          <meta name="apple-mobile-web-app-title" content="幼栗的歌单" />
+          <meta name="apple-mobile-web-app-title" content="芽衣子meiko的歌单" />
           <meta name='format-detection' content='telephone=no' />
           <meta name='msapplication-config' content='/a2hs/browserconfig.xml' />
           <meta name='msapplication-tap-highlight' content='no' />
@@ -293,15 +285,15 @@ export default function Home() {
                 <Image
                   loader={imageLoader}
                   className={styles.avatar}
-                  src="yuri.jpeg"
-                  alt="七宝的头像"
+                  src="yyzls.webp"
+                  alt="yyzls的头像"
                   width={250}
                   height={250}
                 />
                 <h1
                   className={"display-6 text-center pt-3 " + styles.grandTitle}
                 >
-                  西木老师
+                  芽衣子meiko
                 </h1>
                 <h1 className={"display-6 text-center " + styles.grandTitle}>
                  最会唱的<b>{filteredSongList.length}</b>首歌
@@ -313,23 +305,21 @@ export default function Home() {
               <div className={styles.introBox}>
                 <div className={styles.introBoxInnerDiv}>
                   <div className={styles.introTitle}>
-                    <h5>幼栗的自我介绍</h5>
+                    <h5>芽衣子的自我介绍</h5>
                     <div className="d-flex">
                     </div>
                   </div>
                   <p className={styles.introParagraph}>
-                    💗CV圈的新人，性格很温柔，笑点非常低但是她自己说自己面瘫诶。是一位网瘾少女，特别喜欢打英雄联盟典型的人菜，瘾又大，因为听了英雄联盟上面各位前辈的配音，对配音演员产生了浓厚的兴趣并且朝自己的目标努力奋斗着！
-                    目标：给英雄联盟里的英雄配音！
+                    💗是个人
                   </p>
                   <p className={styles.introParagraph}>
-                    💗幼栗名字的由来，是根据最喜欢的歌手----Sayuri(歌手)，栗宝心目中的宝藏歌手，非常倾慕Sayuri(歌手)敢于有梦想的勇气和说做就做的风格。
-                    有段时间英雄联盟的id就叫Sayuri，大家叫着叫着最后就取名幼（Yu） 栗（Ri）了。没想到吧！我也没想到能这么草率！ 另外本名的缩写中也带有 Y
+                    💗是小学生
                   </p>
                   <p className={styles.introParagraph}>
-                    💗爱好：唱歌，配音，猫奴应该是爱好吧（目前家里有一只布偶猫，叫魔典），在Bilibili发布的第一个投稿就是自家的猫猫，对猫猫宠爱至极。好想成为那只猫啊！可恶！
+                    💗爱好：唱歌
                   </p>
                   <p className={styles.introParagraph}>
-                    💗（西木老师真的很温柔，希望大家能照顾好她）
+                    💗（豆芽老师真的很可爱）
                   </p>
                   <div className="d-flex flex-nowrap justify-content-evenly">
                     {/*<Link*/}
@@ -351,7 +341,7 @@ export default function Home() {
                     {/*  </a>*/}
                     {/*</Link>*/}
                     <Link
-                      href="https://space.bilibili.com/291405893/dynamic"
+                      href="https://space.bilibili.com/403921084/dynamic"
                       passHref
                     >
                       <a target="_blank">
@@ -361,10 +351,10 @@ export default function Home() {
                         >
                           <img
                             className={styles.biliIcon}
-                            src="/lubo_yuri.webp"
-                            alt="心碎头像贴图"
+                            src="/lubo.webp"
+                            alt="录播头像贴图"
                           />{" "}
-                          录播组（@心碎） <ChevronSVG />
+                          录播组（@提神醒脑周黑鸭） <ChevronSVG />
                         </Button>
                       </a>
                     </Link>
@@ -401,24 +391,24 @@ export default function Home() {
                         setInitialState={setInitialState}
                       />
                     </Col>
-                    {/*<Col xs={6} md={3}>*/}
-                    {/*  <div className="d-grid">*/}
-                    {/*    <Button*/}
-                    {/*      className={*/}
-                    {/*        categorySelection.lang == "日语"*/}
-                    {/*          ? styles.customCategoryButtonActive*/}
-                    {/*          : styles.customCategoryButton*/}
-                    {/*      }*/}
-                    {/*      onClick={(e) => {*/}
-                    {/*        categorySelection.lang == "日语"*/}
-                    {/*          ? setLanguageState("")*/}
-                    {/*          : setLanguageState("日语");*/}
-                    {/*      }}*/}
-                    {/*    >*/}
-                    {/*      日语*/}
-                    {/*    </Button>*/}
-                    {/*  </div>*/}
-                    {/*</Col>*/}
+                    <Col xs={6} md={3}>
+                      <div className="d-grid">
+                        <Button
+                          className={
+                            categorySelection.lang == "外语"
+                              ? styles.customCategoryButtonActive
+                              : styles.customCategoryButton
+                          }
+                          onClick={(e) => {
+                            categorySelection.lang == "外语"
+                              ? setLanguageState("")
+                              : setLanguageState("外语");
+                          }}
+                        >
+                          外语
+                        </Button>
+                      </div>
+                    </Col>
                     {/*<Col xs={6} md={3}>*/}
                     {/*  <div className="d-grid">*/}
                     {/*    <Button*/}
@@ -476,7 +466,7 @@ export default function Home() {
                     {/*<Col xs={6} md={3}>*/}
                     {/*  <div className="d-grid">*/}
 
-                    {/*  /!** */}
+                    {/*  /!***/}
                     {/*                        <Button*/}
                     {/*      className={*/}
                     {/*        categorySelection.remark == "钢琴"*/}
@@ -621,23 +611,21 @@ export default function Home() {
       </Container>
       <Offcanvas show={showIntro} onHide={handleCloseIntro}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>幼栗的自我介绍</Offcanvas.Title>
+          <Offcanvas.Title>芽衣子的自我介绍</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-            <p className={styles.introParagraph}>
-              💗CV圈的新人，性格很温柔，笑点非常低但是她自己说自己面瘫诶。是一位网瘾少女，特别喜欢打英雄联盟典型的人菜，瘾又大，因为听了英雄联盟上面各位前辈的配音，对配音演员产生了浓厚的兴趣并且朝自己的目标努力奋斗着！
-              目标：给英雄联盟里的英雄配音！
-            </p>
-            <p className={styles.introParagraph}>
-              💗幼栗名字的由来，是根据最喜欢的歌手----Sayuri(歌手)，栗宝心目中的宝藏歌手，非常倾慕Sayuri(歌手)敢于有梦想的勇气和说做就做的风格。
-              有段时间英雄联盟的id就叫Sayuri，大家叫着叫着最后就取名幼（Yu） 栗（Ri）了。没想到吧！我也没想到能这么草率！ 另外本名的缩写中也带有 Y
-            </p>
-            <p className={styles.introParagraph}>
-              💗爱好：唱歌，配音，猫奴应该是爱好吧（目前家里有一只布偶猫，叫魔典），在Bilibili发布的第一个投稿就是自家的猫猫，对猫猫宠爱至极。好想成为那只猫啊！可恶！
-            </p>
-            <p className={styles.introParagraph}>
-              💗（西木老师真的很温柔，希望大家能照顾好她）
-            </p>
+          <p className={styles.introParagraph}>
+            💗是个人
+          </p>
+          <p className={styles.introParagraph}>
+            💗是小学生
+          </p>
+          <p className={styles.introParagraph}>
+            💗爱好：唱歌
+          </p>
+          <p className={styles.introParagraph}>
+            💗（豆芽老师真的很可爱）
+          </p>
           {/*<Link href="https://www.tapechat.net/uu/I5WYEZ/AP42LSVE" passHref>*/}
           {/*  <a target="_blank">*/}
           {/*    <Button*/}
@@ -653,7 +641,7 @@ export default function Home() {
           {/*    </Button>*/}
           {/*  </a>*/}
           {/*</Link>*/}
-          <Link href="https://space.bilibili.com/1367210977/dynamic" passHref>
+          <Link href="https://space.bilibili.com/403921084/dynamic" passHref>
             <a target="_blank">
               <Button
                 className={styles.customRandomButton}
@@ -661,10 +649,10 @@ export default function Home() {
               >
                 <img
                   className={styles.biliIcon}
-                  src="/lubo_yuri.webp"
-                  alt="心碎头像贴图"
+                  src="/lubo.webp"
+                  alt="录播头像贴图"
                 />{" "}
-                录播组（@心碎） <ChevronSVG />
+                录播组（@提神醒脑周黑鸭） <ChevronSVG />
               </Button>
             </a>
           </Link>

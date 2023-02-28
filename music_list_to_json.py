@@ -2,8 +2,6 @@ import json
 import pandas as pd
 import urllib.request
 import openpyxl
-# import logging
-# import time
 song_list = []
 
 
